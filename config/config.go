@@ -11,7 +11,7 @@ var (
 	logger *Logger
 )
 
-func Init() error {
+func InitConfig() error {
 	var err error
 	db, err = InitializeSQLite()
 	if err != nil {
