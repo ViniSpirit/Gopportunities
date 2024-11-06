@@ -1,3 +1,4 @@
+### Create Opening
 POST http://localhost:8080/api/v1/opening HTTP/1.1
 content-type: application/json
 
@@ -9,3 +10,21 @@ content-type: application/json
     "link": "vaga.com/vagapica",
     "salary": 100000
 }
+
+### Delete Opening by ID
+DELETE http://localhost:8080/api/v1/opening?id=3 HTTP/1.1
+
+###List Openings
+GET http://localhost:8080/api/v1/openings HTTP/1.1
+
+### Get Opening by ID
+GET http://localhost:8080/api/v1/opening?id=4 HTTP/1.1
+
+### Update Opening by ID
+PUT http://localhost:8080/api/v1/opening?id=4 HTTP/1.1
+content-type: application/json
+
+{
+    "role": "test2"
+}
+
